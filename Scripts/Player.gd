@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-const ACCELERATION = 2.5
-const FRICTION = 50
-const MAXIMUM_SPEED = 5
+const ACCELERATION = 100
+const FRICTION = 1000
+const MAXIMUM_SPEED = 100
 
 onready var animation_player = $"Animation Player"
 onready var animation_tree = $"Animation Tree"
@@ -24,4 +24,4 @@ func _physics_process(delta):
 	else:
 		animation_state.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-	move_and_collide(velocity)
+	move_and_slide(velocity)

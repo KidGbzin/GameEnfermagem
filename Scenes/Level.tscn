@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Sprites/Tiles/Hospital Tileset.tres" type="TileSet" id=3]
+
+[sub_resource type="TileSet" id=1]
+
+[node name="Level" type="Node2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Floor & Walls (Behind)" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Objects (Behind)" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -196593, 8, 0, -131064, 536870965, 0, -131063, 53, 0, -131057, 45, 0, -65526, 10, 0, -65525, 10, 0, -65524, 13, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
