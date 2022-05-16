@@ -228,6 +228,7 @@ parameters/Walk/blend_position = Vector2( 0, 0 )
 
 [node name="Camera" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 0.35, 0.35 )
 __meta__ = {
 "_edit_lock_": true
 }
