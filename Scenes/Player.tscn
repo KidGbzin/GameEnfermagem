@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Assets/Sprites/Characters/nurse_2.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Controls.tscn" type="PackedScene" id=3]
 
 [sub_resource type="Animation" id=18]
 resource_name = "Idle Down"
@@ -249,3 +250,5 @@ frame = 4
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Controls" parent="." instance=ExtResource( 3 )]

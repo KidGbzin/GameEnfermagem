@@ -11,6 +11,5 @@ func _on_Exit_pressed():
 # warning-ignore:standalone_expression
 	get_tree().quit
 
-
 func _on_Credits_pressed():
 	get_tree().change_scene("res://Scenes/Credits.tscn")
